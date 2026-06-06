@@ -57,7 +57,7 @@ const p3 = new Vector3(0, 1, 0);
 approximateNormal(v3node, p3, v3node);
 
 // remapExp: float-ish args (numbers or float nodes) -> float node.
-// $ExpectType Node<"float">
+// $ExpectType Node<"vec3">
 remapExp(0.5, 0, 1, 1, 10);
 // $ExpectType Node<"float">
 remapExp(f, f, 1, 0, f);
