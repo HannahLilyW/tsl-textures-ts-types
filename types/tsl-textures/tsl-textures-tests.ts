@@ -1,49 +1,45 @@
-import { Color, Node, Vector2, Vector3 } from "three/webgpu";
 import { float, uniform, vec2, vec3 } from "three/tsl";
+import { Color, Node, Vector2, Vector3 } from "three/webgpu";
 
 import {
     // utility functions
     approximateNormal,
-    hideFallbackWarning,
-    hsl,
-    remapExp,
-    rotatePivot,
-    selectPlanar,
-    showFallbackWarning,
-    spherical,
-    toHsl,
-    vnoise,
-
-    // re-exported noise / fractal / voronoi
-    fractal,
-    fractal3,
-    noise,
-    noise3,
-    voronoi,
-    voronoi2,
-    voronoi3,
-
+    // multi-channel textures
+    brain,
     // simple textures (callable + .defaults)
     bricks,
     camouflage,
+    clouds,
+    // re-exported noise / fractal / voronoi
+    fractal,
+    fractal3,
     grid,
     halftone,
+    hideFallbackWarning,
+    hsl,
+    noise,
+    noise3,
     planet,
     polkaDots,
-
-    // multi-channel textures
-    brain,
-    clouds,
+    remapExp,
+    rotatePivot,
     rotator,
     runnyEggs,
-    rust,
-    scaler,
-    supersphere,
-    translator,
-    waves,
-
     // param interfaces
     RunnyEggsParams,
+    rust,
+    scaler,
+    selectPlanar,
+    showFallbackWarning,
+    spherical,
+    supersphere,
+    toHsl,
+    translator,
+    vnoise,
+    voronoi,
+    voronoi2,
+    voronoi3,
+    waves,
 } from "tsl-textures";
 
 // Sample node values of each supported kind, used as inputs below.

@@ -2,12 +2,11 @@
     "private": true,
     "license": "MIT",
     "scripts": {
-        "test-all": "node --enable-source-maps node_modules/@definitelytyped/dtslint-runner/ --path .",
         "test": "node --enable-source-maps node_modules/@definitelytyped/dtslint/ types/tsl-textures",
         "lint": "node --enable-source-maps node_modules/@definitelytyped/dtslint/ types/tsl-textures",
         "format": "dprint fmt",
         "format-check": "dprint check",
-        "type-check": "tsc --project tsconfig.all-files.json"
+        "type-check": "tsc --project types/tsl-textures/tsconfig.json"
     },
     "devDependencies": {
         "@definitelytyped/definitions-parser": "latest",
@@ -19,6 +18,7 @@
         "@definitelytyped/typescript-versions": "latest",
         "@definitelytyped/utils": "latest",
         "@types/three": "*",
+        "dprint": "^0.54.0",
         "typescript": "latest"
     },
     "packageManager": "pnpm@10.33.2"
