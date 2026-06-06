@@ -1,0 +1,25 @@
+{
+    "private": true,
+    "license": "MIT",
+    "scripts": {
+        "test-all": "node --enable-source-maps node_modules/@definitelytyped/dtslint-runner/ --path .",
+        "test": "node --enable-source-maps node_modules/@definitelytyped/dtslint/ types/tsl-textures",
+        "lint": "node --enable-source-maps node_modules/@definitelytyped/dtslint/ types/tsl-textures",
+        "format": "dprint fmt",
+        "format-check": "dprint check",
+        "type-check": "tsc --project tsconfig.all-files.json"
+    },
+    "devDependencies": {
+        "@definitelytyped/definitions-parser": "latest",
+        "@definitelytyped/dts-critic": "latest",
+        "@definitelytyped/dtslint": "latest",
+        "@definitelytyped/dtslint-runner": "latest",
+        "@definitelytyped/eslint-plugin": "latest",
+        "@definitelytyped/header-parser": "latest",
+        "@definitelytyped/typescript-versions": "latest",
+        "@definitelytyped/utils": "latest",
+        "@types/three": "*",
+        "typescript": "latest"
+    },
+    "packageManager": "pnpm@10.33.2"
+}

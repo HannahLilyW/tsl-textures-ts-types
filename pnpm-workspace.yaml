@@ -1,0 +1,11 @@
+packages:
+  - types/tsl-textures
+
+publicHoistPattern:
+  - '*eslint*'
+  - '*prettier*'
+  - '!@types/*'
+
+onlyBuiltDependencies:
+  - dprint
+  - esbuild
