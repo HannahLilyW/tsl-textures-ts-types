@@ -1,0 +1,1 @@
+cp -r types/tsl-textures ../DefinitelyTyped/types/
